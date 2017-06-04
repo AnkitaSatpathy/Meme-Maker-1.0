@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -60,18 +61,22 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6NK-UT-rB4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6NK-UT-rB4">
                                 <rect key="frame" x="77" y="104" width="246" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eNu-lk-qn4"/>
+                                </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yL-71-6Np">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yL-71-6Np">
                                 <rect key="frame" x="77" y="501" width="246" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZeT-aZ-Pti"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -81,12 +86,18 @@
                             <constraint firstItem="2bs-4J-eHK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CHN-Ie-h3U"/>
                             <constraint firstItem="NCV-TB-kOz" firstAttribute="leading" secondItem="2bs-4J-eHK" secondAttribute="leading" id="CJK-3I-uAl"/>
                             <constraint firstItem="NCV-TB-kOz" firstAttribute="top" secondItem="2bs-4J-eHK" secondAttribute="bottom" constant="63" id="Fn9-iC-vwa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3yL-71-6Np" secondAttribute="trailing" constant="36" id="Po5-wg-9nD"/>
+                            <constraint firstItem="6NK-UT-rB4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="UDk-XG-IDK"/>
+                            <constraint firstItem="6NK-UT-rB4" firstAttribute="top" secondItem="ltC-13-BD8" secondAttribute="bottom" constant="26" id="V33-Cj-6cA"/>
                             <constraint firstItem="ltC-13-BD8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="V3H-9m-wLT"/>
+                            <constraint firstItem="3yL-71-6Np" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="bdV-Je-EGL"/>
                             <constraint firstItem="NCV-TB-kOz" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="bmE-WS-e0i"/>
                             <constraint firstAttribute="trailing" secondItem="2bs-4J-eHK" secondAttribute="trailing" id="goU-2I-tJ4"/>
                             <constraint firstAttribute="trailing" secondItem="ltC-13-BD8" secondAttribute="trailing" id="hEf-Ju-ufZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6NK-UT-rB4" secondAttribute="trailing" constant="36" id="hkK-QU-zWO"/>
                             <constraint firstItem="2bs-4J-eHK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="j8O-UC-Fz1"/>
                             <constraint firstItem="NCV-TB-kOz" firstAttribute="trailing" secondItem="2bs-4J-eHK" secondAttribute="trailing" id="rGf-T5-PA9"/>
+                            <constraint firstItem="NCV-TB-kOz" firstAttribute="top" secondItem="3yL-71-6Np" secondAttribute="bottom" constant="92" id="udG-91-oPQ"/>
                             <constraint firstItem="ltC-13-BD8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zRj-4F-EOA"/>
                         </constraints>
                     </view>
