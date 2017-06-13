@@ -30,7 +30,7 @@
                                 <items>
                                     <barButtonItem title="Album" id="TNm-Nv-6dF">
                                         <connections>
-                                            <action selector="PickTapped:" destination="BYZ-38-t0r" id="B5u-fv-C4C"/>
+                                            <action selector="albumTapped:" destination="BYZ-38-t0r" id="j0t-Y6-svF"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="bNC-Wk-sUe"/>
@@ -69,7 +69,7 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yL-71-6Np">
                                 <rect key="frame" x="77" y="501" width="246" height="30"/>
@@ -78,7 +78,7 @@
                                     <constraint firstAttribute="height" constant="30" id="ZeT-aZ-Pti"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
